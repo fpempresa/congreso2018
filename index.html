@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app" ng-strict-di>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="V Congreso Nacional de Formación Profesional">
+        <meta name="author" content="fpempresa">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+
+        <title>V Congreso Nacional de Formación Profesional</title>
+
+        <link href="./lib/bootstrap/css/bootstrap.css"                 rel="stylesheet" type="text/css" />
+        <link href="./lib/fontawesome/css/font-awesome.css"            rel="stylesheet" type="text/css" />
+        <link href="./css/site/site.css"                               rel="stylesheet" type="text/css" />
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+            window.cookieconsent_options = {
+                "message": "Este sitio web cookies propias y de terceros para ofrecer un mejor servicio.Si continua navegando asuminos que acepta su uso.  Mas información en",
+                "dismiss": "Aceptar",
+                "learnMore": "Politicas de Cookies", "link": "./cookies.html", "theme": "./lib/cookieconsent/cookieconsent.css"};
+        </script>
+
+        <script type="text/javascript" src="./lib/cookieconsent/cookieconsent.js"></script>
+        <!-- End Cookie Consent plugin -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68576909-2', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+
+    <body id="top"  ng-controller="IndexController" style="background-color: #F6F8F7" >
+
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation"  >
+            <div class="container-fluid" >
+                <div class="navbar-header">
+                    <button id="buttonMenuHeader" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href ng-click="animateScroll.toElement('top')">
+                        <img src="./img/logo/logo.png"  alt="logo"  >&nbsp;
+                    </a>
+                </div>
+
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="hidden">
+                            <a href ng-click="animateScroll.toElement('top')" fpe-click-button-on-click="buttonMenuHeader"></a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('registro')" fpe-click-button-on-click="buttonMenuHeader" >INSCRIPCI&Oacute;N</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('donde')" fpe-click-button-on-click="buttonMenuHeader">DONDE</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('agenda')" fpe-click-button-on-click="buttonMenuHeader">AGENDA</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('alojamiento')" fpe-click-button-on-click="buttonMenuHeader">ALOJAMIENTO</a>
+                        </li>
+                        <li>
+                            <a  href ng-click="animateScroll.toElement('objetivos')" fpe-click-button-on-click="buttonMenuHeader">OBJETIVOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="intro" >
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12" >
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12" style="color:#372919">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>                            
+                            <h3 style="font-size: 30px;text-transform: uppercase"><strong>Formación profesional, somos lo que hacemos</strong></h3>
+                            <br>
+                            <h1 style="font-size: 70px;"><strong>V CONGRESO NACIONAL</strong><br>DE FORMACIÓN<br>PROFESIONAL</h1>
+                            <br>
+                            <p class="intro-text" style="font-size: 45px;"><span style="color: #000000">Barcelona 24 - 25 de Mayo de 2018</span><br><span style="font-weight: bolder">Hotel Alimara Barcelona</span></p>
+                            <br>
+                            <a href ng-click="animateScroll.toElement('registro')" style="color:#6E8654;border-color: #6E8654" class="btn button-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section id="registro" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;INSCRIPCIÓN&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high">
+                        Aun estamos preparando el proceso de inscripción
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="donde" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;DONDE&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div> 
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h1>24 y 25 de mayo de 2018</h1>
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high"><strong>Hotel Alimara Barcelona</strong><br>
+                        Carrer de Berruguete, 126<br> 
+                        08035 Barcelona<br> 
+                        METRO MUNDET<br> 
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.246349293297!2d2.145255815767773!3d41.43387600107431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd58587c97c3%3A0x388ea765a96af8ee!2sHotel+Alimara+Barcelona!5e0!3m2!1ses!2ses!4v1524079707487" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="agenda" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;AGENDA&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h3><strong>Jueves 24 de Mayo</strong></h3>
+
+                    <table class="table table-bordered table-striped">
+                        <tr class="active">
+                            <th style="width:  100px;text-align: center">Hora</th>
+                            <th style="text-align: center" colspan="2">Actividad</th>
+                        </tr>
+                        <tr>
+                            <td>15:00&nbsp;h.</td>
+                            <td colspan="2">Acreditación al V Congreso</td>
+                        </tr>
+                        <tr>
+                            <td>15:30&nbsp;h.</td>
+                            <td colspan="2">Bienvenida e inauguración</td>
+                        </tr>                        
+                        <tr>
+                            
+                            <td>16:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Ponencia: Retos para la Formación Profesional</strong><br>
+                                <div style="text-align: left">
+                                    Jorge Arévalo Turrillas: Viceconsejero de Formación Profesional del País Vasco.<br>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>16:30&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Ponencia: Equipos de trabajo y motivación en FP</strong><br>
+                                <div style="text-align: left">
+                                    Xesco Espar: Experto y líder de pensamiento en Liderazgo, Trabajo en Equipo, Motivación y Maestría Personal.<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00&nbsp;h.</td>
+                            <td colspan="2">
+                                Turno de preguntas<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:15&nbsp;h.</td>
+                            <td>
+                                <strong>Actividad 1: Mesa  técnica</strong><br>
+                                <div style="text-align: left">
+                                    Para elaboración del Documento Visión de la Asociación de Centros de Fp sobre la situación de la FP en el 2018. Participarán  un representante de cada centro asociado<br>
+                                </div>                                
+                            </td>
+                            <td  >
+                                <strong>Actividad 2: Visitas a 4 centros específicos de fp de la ciudad de barcelona</strong><br>
+                                <div style="text-align: left">
+                                    Organizados en 4 grupos diferenciados. Se dispondrá de autobuses y guías para cada centro.<br>
+                                    <ul>
+                                        <li>1ª Opción: Visita a un centro de referencia familia Hotelería y Turismo (INS Escola d’Hosteleria i Turisme de Barcelona)</li>
+                                        <li>2ª Opción: Visita a un centro de referencia familia Sanitaria (INS Bonanova)</li>
+                                        <li>3ª Opción: Visita a un centro de referencia familias industriales (INS Escola del Treball de Barcelona)</li>
+                                        <li>4º Opción: Visita a un desfile de moda de alumnos, organizado por los centros INS Anna Gironella Mundet (familia Textil, Confección y Piel) INS Vall d’Hebron (familia Imagen Personal), INS Lluïsa Cura (familia Marketing y Publicitat) y INS Joan Brosa.</li>
+                                    </ul>
+                                </div>       
+
+
+
+
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td>18:30&nbsp;h.</td>
+                            <td  colspan="2">
+                                <strong>Asamblea Anual de la Asociación</strong><br>
+                                <div style="text-align: left">
+                                    Representantes de los Centros Asociados<br>
+                                </div>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21:00&nbsp;h.</td>
+                            <td colspan="2">
+                                <strong>Cena anual de la asociación</strong><br>
+                                <div style="text-align: left">
+                                    Representantes de los Centros Asociados e invitados
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row" >
+                <div class="col-xs-12">
+                    <h3><strong>Viernes 25 de Mayo</strong></h3>
+
+                    <table class="table table-bordered table-striped">
+                        <tr class="active">
+                            <th style="min: 100px;text-align: center">Hora</th>
+                            <th style="text-align: center">Actividad</th>
+                        </tr>
+                        <tr>
+                            <td>09:00&nbsp;h.</td>
+                            <td>
+                                <strong>Actualidad de la Formación Profesional</strong><br>
+                                <div style="text-align: left">
+                                     Ponentes institucionales pendientes de confirmación<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00&nbsp;h.</td>
+                            <td>
+                                <strong>Presentación y Panel de expertos: La Convocatoria Dualiza: Proyectos de  colaboración entre centros de fp y empresas</strong><br>
+                                <div style="text-align: left">
+                                    Mercedes Chacón: Directora de la Fundación Bankia por la FP <br>
+                                    Sergio San Martín: Secretario de la Asociación FPempresa<br>
+                                    Representante/s de Centros Ganadores<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td>11:00&nbsp;h.</td>
+                            <td>
+                                Café y tiempo para el intercambio de ideas<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30&nbsp;h.</td>
+                            <td>
+                                <strong>Ponencia: Canadá : La educación técnica y profesional. Visión de Futuro</strong><br>
+                                <div style="text-align: left">
+                                    Alain Roy: Vicepresidente de la  International Partnerships, Colleges and Institutes of Canada <br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:00&nbsp;h.</td>
+                            <td>
+                                <strong>Ponencia: La relación entre centros de FP las empresas del sector: el caso de la electromedina</strong><br>
+                                <div style="text-align: left">
+                                    Juan Manuel Eugenio Barroso Versus Consultores
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:30&nbsp;h.</td>
+                            <td>
+                                Debate<br>
+                            </td>
+                        </tr>                        <tr>
+                            <td>13:00&nbsp;h.</td>
+                            <td>
+                                <strong>Presentación documento congresual: situación actual de la FP, la visión de los centros de fp</strong><br>
+                                <div style="text-align: left">
+                                    Luis García Domínguez. Presidente de la Asociación de Centros de Fp “Fpempresa”<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td>13:30&nbsp;h.</td>
+                            <td>
+                                Comida (en el mismo lugar del congreso)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:00&nbsp;h.</td>
+                            <td>
+                                <strong>Panel de expertos: Experiencias innovadoras en Centros. Buenas prácticas “Los que innovan llegan antes”</strong><br>
+                                <div style="text-align: left">
+                                    Portavoces cuatro centros innovadores<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:30&nbsp;h.</td>
+                            <td>
+                                Conclusiones y relato del Congreso<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00&nbsp;h.</td>
+                            <td>
+                                Clausura
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+        <section id="alojamiento" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;ALOJAMIENTO&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-high">
+                        Pronto estará la información sobre el alojamiento<br>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="objetivos" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br><br>
+                    <h3 class="section__main-title  section--color-dark-high">&nbsp;&nbsp;OBJETIVOS&nbsp;&nbsp;</h3>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <p class="section__text  section--color-dark-high section__text--size-low">
+                        Antes los retos que se presentan por la denominada cuarta revolución industrial, consecuencia de las nuevas tecnologías, globalización, conectividad, digitalización etc. 
+                        La respuesta es diversa incluyendo la rápida adaptación a vertiginosa TECNOESFERA pero también la FORMACIÓN en CAPACIDADES SUTILES como las que representan los <strong>valores 4.0</strong>, que a diferencia del aprendizaje  exclusivamente instrumental tienen un valor añadido o una permanencia mayor. 
+                        Queremos reflexionar sobre los que hacemos o debemos hacer para mejorar una formación profesional que  pueda dar respuestas a un futuro repleto de incertidumbres y oportunidades.
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+
+        <section id="patrocinadores" class="container section__container section--background-color-light section__container--padding">
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row"  >
+                <div class="col-md-4 col-sm-4 col-xs-12" style="font-size: 18px;text-align: left;font-weight:bold">Organizan</div>
+                <div class="col-md-4 col-sm-4 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.fpempresa.net"><img src="./img/logo/logo_azul_medio.png" title="FPempresa"/></a></div>
+                <div class="col-md-4 col-sm-4 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.bankia.es"><img src="./img/logo/dualbankia.png" title="FP Dual Bankia"  /></a></div>
+            </div>
+            <div class="row" >
+                <div class="col-xs-12">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+<!--            
+            <div class="row"  >
+                <div class="col-md-1 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left;font-weight:bold">Colaboran</div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.juntadeandalucia.es/educacion/portals/web/ced"><img src="./img/logo/junta_andalucia.jpg" title="Consejería de Educación de la Junta de Andalucía"/></a></div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.uma.es/ETSI-informatica"><img src="./img/logo/escuela_informatica.jpg" title="Escuela Técnica Superior de Ingenieria Informática - Universidad de Malaga"  /></a></div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.juntadeandalucia.es/educacion/portals/web/cep-malaga"><img src="./img/logo/junta_consejeria_CEPMA.png" title="Centro de Formación Profesorado de Málaga"  /></a></div>
+                <div class="col-md-2 col-sm-6 col-xs-12" style="font-size: 18px;text-align: left"><a href="http://www.uma.es/facultad-de-ciencias-de-la-educacion/"><img src="./img/logo/ciencias_educacion.jpeg" title="Facultad de Ciencias de la Educacion: Equipo de Formación y Orientación Profesional para el Empleo y el Emprendimiento. Grupo HUM365 Formación, Orientación, Empleabilidad, Emprendimiento, Inclusión e Innovación - Universidad de Malaga"  /></a></div>
+
+            </div>
+-->
+            <br>
+
+        </section>
+
+
+
+        <footer  class="container-fluid section__container  section--background-color-dark section--color-light-high">
+
+            <p class="section__text  section--color-light-high"  >
+                <a href="https://twitter.com/fp_empresa" target="_blank" class="social__icon section--color-light"><i class="fa fa-twitter-square"></i></a>&nbsp;&nbsp;#fpempresa
+<!--          <a href="https://www.facebook.com/asociacion.fpempresa" target="_blank" class="social__icon"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;
+                <a href="https://plus.google.com/+FPempresaNet/posts" target="_blank" class="social__icon"><i class="fa fa-google-plus-square"></i></a> -->
+                <br>
+                <br>
+                <a href="http://fpempresa.net"  class="section--color-light">&copy; 2017 Asociaci&oacute;n de centros de FP (AC-FP)</a>
+                <br>
+                <br>
+            </p>
+        </footer>
+
+
+        <script type="text/javascript" src="./lib/jquery/js/jquery.js"></script>
+        <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
+
+        <script type='text/javascript' src='./lib/angularjs/js/angular.js'></script>
+        <script type="text/javascript" src="./lib/easing/js/jquery.easing.min.js"></script>
+
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="./common/presentation/directive/clickbuttononclick.js"></script>
+        <script type="text/javascript" src="./common/presentation/service/animatescroll.js"></script>
+    </body>
+</html>
